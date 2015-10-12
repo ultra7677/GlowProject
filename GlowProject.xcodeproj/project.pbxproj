@@ -12,8 +12,8 @@
 		B11C16BE1BCC211100FBDE87 /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = B11C16B91BCC211100FBDE87 /* Author.m */; settings = {ASSET_TAGS = (); }; };
 		B11C16BF1BCC211100FBDE87 /* MyComment.m in Sources */ = {isa = PBXBuildFile; fileRef = B11C16BB1BCC211100FBDE87 /* MyComment.m */; settings = {ASSET_TAGS = (); }; };
 		B11C16C01BCC211100FBDE87 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = B11C16BD1BCC211100FBDE87 /* Topic.m */; settings = {ASSET_TAGS = (); }; };
-		B11C16C21BCC214100FBDE87 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B11C16C11BCC214100FBDE87 /* README.md */; settings = {ASSET_TAGS = (); }; };
 		B11C16C41BCC215200FBDE87 /* Glow_Data.txt in Resources */ = {isa = PBXBuildFile; fileRef = B11C16C31BCC215200FBDE87 /* Glow_Data.txt */; settings = {ASSET_TAGS = (); }; };
+		B11C16C61BCC23A500FBDE87 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B11C16C51BCC23A500FBDE87 /* README.md */; settings = {ASSET_TAGS = (); }; };
 		B133B2DA1BCA21CE004309D1 /* CommentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B133B2D91BCA21CE004309D1 /* CommentTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B19DBCB91BC90C8100BD95B2 /* TopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19DBCB81BC90C8100BD95B2 /* TopicTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B19DBCC71BC95B3600BD95B2 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19DBCC61BC95B3600BD95B2 /* CommentTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
@@ -52,8 +52,8 @@
 		B11C16BB1BCC211100FBDE87 /* MyComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyComment.m; sourceTree = "<group>"; };
 		B11C16BC1BCC211100FBDE87 /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
 		B11C16BD1BCC211100FBDE87 /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
-		B11C16C11BCC214100FBDE87 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B11C16C31BCC215200FBDE87 /* Glow_Data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Glow_Data.txt; sourceTree = "<group>"; };
+		B11C16C51BCC23A500FBDE87 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B133B2D91BCA21CE004309D1 /* CommentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewController.swift; sourceTree = "<group>"; };
 		B19DBCB81BC90C8100BD95B2 /* TopicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicTableViewController.swift; sourceTree = "<group>"; };
 		B19DBCBA1BC90CEA00BD95B2 /* GlowProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GlowProject-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -106,6 +106,7 @@
 				B1C4BBFD1BC8F51C006BBEB7 /* GlowProjectTests */,
 				B1C4BC081BC8F51C006BBEB7 /* GlowProjectUITests */,
 				B1C4BBE71BC8F51C006BBEB7 /* Products */,
+				B11C16C51BCC23A500FBDE87 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,7 +139,6 @@
 				B11C16BB1BCC211100FBDE87 /* MyComment.m */,
 				B11C16BC1BCC211100FBDE87 /* Topic.h */,
 				B11C16BD1BCC211100FBDE87 /* Topic.m */,
-				B11C16C11BCC214100FBDE87 /* README.md */,
 				B1C4BBF51BC8F51C006BBEB7 /* Info.plist */,
 				B19DBCBA1BC90CEA00BD95B2 /* GlowProject-Bridging-Header.h */,
 			);
@@ -301,7 +301,7 @@
 			files = (
 				B133B2DA1BCA21CE004309D1 /* CommentTableViewController.swift in Sources */,
 				B1C4BBEC1BC8F51C006BBEB7 /* ViewController.swift in Sources */,
-				B11C16C21BCC214100FBDE87 /* README.md in Sources */,
+				B11C16C61BCC23A500FBDE87 /* README.md in Sources */,
 				B11C16BE1BCC211100FBDE87 /* Author.m in Sources */,
 				B11C16C01BCC211100FBDE87 /* Topic.m in Sources */,
 				B1C4BBEA1BC8F51C006BBEB7 /* AppDelegate.swift in Sources */,
