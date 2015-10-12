@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B11C16B51BCC202100FBDE87 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B11C16B41BCC202100FBDE87 /* Default-568h@2x.png */; settings = {ASSET_TAGS = (); }; };
+		B11C16B71BCC20E800FBDE87 /* TopicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11C16B61BCC20E800FBDE87 /* TopicTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		B11C16BE1BCC211100FBDE87 /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = B11C16B91BCC211100FBDE87 /* Author.m */; settings = {ASSET_TAGS = (); }; };
+		B11C16BF1BCC211100FBDE87 /* MyComment.m in Sources */ = {isa = PBXBuildFile; fileRef = B11C16BB1BCC211100FBDE87 /* MyComment.m */; settings = {ASSET_TAGS = (); }; };
+		B11C16C01BCC211100FBDE87 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = B11C16BD1BCC211100FBDE87 /* Topic.m */; settings = {ASSET_TAGS = (); }; };
+		B11C16C21BCC214100FBDE87 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B11C16C11BCC214100FBDE87 /* README.md */; settings = {ASSET_TAGS = (); }; };
+		B11C16C41BCC215200FBDE87 /* Glow_Data.txt in Resources */ = {isa = PBXBuildFile; fileRef = B11C16C31BCC215200FBDE87 /* Glow_Data.txt */; settings = {ASSET_TAGS = (); }; };
+		B133B2DA1BCA21CE004309D1 /* CommentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B133B2D91BCA21CE004309D1 /* CommentTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B19DBCB91BC90C8100BD95B2 /* TopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19DBCB81BC90C8100BD95B2 /* TopicTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B19DBCC71BC95B3600BD95B2 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19DBCC61BC95B3600BD95B2 /* CommentTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		B1C4BBEA1BC8F51C006BBEB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C4BBE91BC8F51C006BBEB7 /* AppDelegate.swift */; };
+		B1C4BBEC1BC8F51C006BBEB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C4BBEB1BC8F51C006BBEB7 /* ViewController.swift */; };
+		B1C4BBEF1BC8F51C006BBEB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C4BBED1BC8F51C006BBEB7 /* Main.storyboard */; };
+		B1C4BBF11BC8F51C006BBEB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C4BBF01BC8F51C006BBEB7 /* Assets.xcassets */; };
+		B1C4BBF41BC8F51C006BBEB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C4BBF21BC8F51C006BBEB7 /* LaunchScreen.storyboard */; };
+		B1C4BBFF1BC8F51C006BBEB7 /* GlowProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C4BBFE1BC8F51C006BBEB7 /* GlowProjectTests.swift */; };
+		B1C4BC0A1BC8F51C006BBEB7 /* GlowProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C4BC091BC8F51C006BBEB7 /* GlowProjectUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1C4BBFB1BC8F51C006BBEB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1C4BBDE1BC8F51C006BBEB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1C4BBE51BC8F51C006BBEB7;
+			remoteInfo = GlowProject;
+		};
+		B1C4BC061BC8F51C006BBEB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1C4BBDE1BC8F51C006BBEB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1C4BBE51BC8F51C006BBEB7;
+			remoteInfo = GlowProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B11C16B41BCC202100FBDE87 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B11C16B61BCC20E800FBDE87 /* TopicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicTableViewCell.swift; sourceTree = "<group>"; };
+		B11C16B81BCC211100FBDE87 /* Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Author.h; sourceTree = "<group>"; };
+		B11C16B91BCC211100FBDE87 /* Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Author.m; sourceTree = "<group>"; };
+		B11C16BA1BCC211100FBDE87 /* MyComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyComment.h; sourceTree = "<group>"; };
+		B11C16BB1BCC211100FBDE87 /* MyComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyComment.m; sourceTree = "<group>"; };
+		B11C16BC1BCC211100FBDE87 /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
+		B11C16BD1BCC211100FBDE87 /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
+		B11C16C11BCC214100FBDE87 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B11C16C31BCC215200FBDE87 /* Glow_Data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Glow_Data.txt; sourceTree = "<group>"; };
+		B133B2D91BCA21CE004309D1 /* CommentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewController.swift; sourceTree = "<group>"; };
+		B19DBCB81BC90C8100BD95B2 /* TopicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicTableViewController.swift; sourceTree = "<group>"; };
+		B19DBCBA1BC90CEA00BD95B2 /* GlowProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GlowProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		B19DBCC61BC95B3600BD95B2 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		B1C4BBE61BC8F51C006BBEB7 /* GlowProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlowProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C4BBE91BC8F51C006BBEB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1C4BBEB1BC8F51C006BBEB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B1C4BBEE1BC8F51C006BBEB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1C4BBF01BC8F51C006BBEB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1C4BBF31BC8F51C006BBEB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1C4BBF51BC8F51C006BBEB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1C4BBFA1BC8F51C006BBEB7 /* GlowProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlowProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C4BBFE1BC8F51C006BBEB7 /* GlowProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowProjectTests.swift; sourceTree = "<group>"; };
+		B1C4BC001BC8F51C006BBEB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1C4BC051BC8F51C006BBEB7 /* GlowProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlowProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C4BC091BC8F51C006BBEB7 /* GlowProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowProjectUITests.swift; sourceTree = "<group>"; };
+		B1C4BC0B1BC8F51C006BBEB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1C4BBE31BC8F51C006BBEB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C4BBF71BC8F51C006BBEB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C4BC021BC8F51C006BBEB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1C4BBDD1BC8F51C006BBEB7 = {
+			isa = PBXGroup;
+			children = (
+				B11C16B41BCC202100FBDE87 /* Default-568h@2x.png */,
+				B1C4BBE81BC8F51C006BBEB7 /* GlowProject */,
+				B1C4BBFD1BC8F51C006BBEB7 /* GlowProjectTests */,
+				B1C4BC081BC8F51C006BBEB7 /* GlowProjectUITests */,
+				B1C4BBE71BC8F51C006BBEB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1C4BBE71BC8F51C006BBEB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1C4BBE61BC8F51C006BBEB7 /* GlowProject.app */,
+				B1C4BBFA1BC8F51C006BBEB7 /* GlowProjectTests.xctest */,
+				B1C4BC051BC8F51C006BBEB7 /* GlowProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1C4BBE81BC8F51C006BBEB7 /* GlowProject */ = {
+			isa = PBXGroup;
+			children = (
+				B19DBCC61BC95B3600BD95B2 /* CommentTableViewCell.swift */,
+				B1C4BBE91BC8F51C006BBEB7 /* AppDelegate.swift */,
+				B1C4BBEB1BC8F51C006BBEB7 /* ViewController.swift */,
+				B11C16B61BCC20E800FBDE87 /* TopicTableViewCell.swift */,
+				B1C4BBED1BC8F51C006BBEB7 /* Main.storyboard */,
+				B19DBCB81BC90C8100BD95B2 /* TopicTableViewController.swift */,
+				B133B2D91BCA21CE004309D1 /* CommentTableViewController.swift */,
+				B1C4BBF01BC8F51C006BBEB7 /* Assets.xcassets */,
+				B1C4BBF21BC8F51C006BBEB7 /* LaunchScreen.storyboard */,
+				B11C16B81BCC211100FBDE87 /* Author.h */,
+				B11C16B91BCC211100FBDE87 /* Author.m */,
+				B11C16BA1BCC211100FBDE87 /* MyComment.h */,
+				B11C16C31BCC215200FBDE87 /* Glow_Data.txt */,
+				B11C16BB1BCC211100FBDE87 /* MyComment.m */,
+				B11C16BC1BCC211100FBDE87 /* Topic.h */,
+				B11C16BD1BCC211100FBDE87 /* Topic.m */,
+				B11C16C11BCC214100FBDE87 /* README.md */,
+				B1C4BBF51BC8F51C006BBEB7 /* Info.plist */,
+				B19DBCBA1BC90CEA00BD95B2 /* GlowProject-Bridging-Header.h */,
+			);
+			path = GlowProject;
+			sourceTree = "<group>";
+		};
+		B1C4BBFD1BC8F51C006BBEB7 /* GlowProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1C4BBFE1BC8F51C006BBEB7 /* GlowProjectTests.swift */,
+				B1C4BC001BC8F51C006BBEB7 /* Info.plist */,
+			);
+			path = GlowProjectTests;
+			sourceTree = "<group>";
+		};
+		B1C4BC081BC8F51C006BBEB7 /* GlowProjectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B1C4BC091BC8F51C006BBEB7 /* GlowProjectUITests.swift */,
+				B1C4BC0B1BC8F51C006BBEB7 /* Info.plist */,
+			);
+			path = GlowProjectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1C4BBE51BC8F51C006BBEB7 /* GlowProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1C4BC0E1BC8F51C006BBEB7 /* Build configuration list for PBXNativeTarget "GlowProject" */;
+			buildPhases = (
+				B1C4BBE21BC8F51C006BBEB7 /* Sources */,
+				B1C4BBE31BC8F51C006BBEB7 /* Frameworks */,
+				B1C4BBE41BC8F51C006BBEB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlowProject;
+			productName = GlowProject;
+			productReference = B1C4BBE61BC8F51C006BBEB7 /* GlowProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1C4BBF91BC8F51C006BBEB7 /* GlowProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1C4BC111BC8F51C006BBEB7 /* Build configuration list for PBXNativeTarget "GlowProjectTests" */;
+			buildPhases = (
+				B1C4BBF61BC8F51C006BBEB7 /* Sources */,
+				B1C4BBF71BC8F51C006BBEB7 /* Frameworks */,
+				B1C4BBF81BC8F51C006BBEB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1C4BBFC1BC8F51C006BBEB7 /* PBXTargetDependency */,
+			);
+			name = GlowProjectTests;
+			productName = GlowProjectTests;
+			productReference = B1C4BBFA1BC8F51C006BBEB7 /* GlowProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B1C4BC041BC8F51C006BBEB7 /* GlowProjectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1C4BC141BC8F51C006BBEB7 /* Build configuration list for PBXNativeTarget "GlowProjectUITests" */;
+			buildPhases = (
+				B1C4BC011BC8F51C006BBEB7 /* Sources */,
+				B1C4BC021BC8F51C006BBEB7 /* Frameworks */,
+				B1C4BC031BC8F51C006BBEB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1C4BC071BC8F51C006BBEB7 /* PBXTargetDependency */,
+			);
+			name = GlowProjectUITests;
+			productName = GlowProjectUITests;
+			productReference = B1C4BC051BC8F51C006BBEB7 /* GlowProjectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1C4BBDE1BC8F51C006BBEB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = ultra;
+				TargetAttributes = {
+					B1C4BBE51BC8F51C006BBEB7 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = P3GURAZDJA;
+					};
+					B1C4BBF91BC8F51C006BBEB7 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = P3GURAZDJA;
+						TestTargetID = B1C4BBE51BC8F51C006BBEB7;
+					};
+					B1C4BC041BC8F51C006BBEB7 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = P3GURAZDJA;
+						TestTargetID = B1C4BBE51BC8F51C006BBEB7;
+					};
+				};
+			};
+			buildConfigurationList = B1C4BBE11BC8F51C006BBEB7 /* Build configuration list for PBXProject "GlowProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1C4BBDD1BC8F51C006BBEB7;
+			productRefGroup = B1C4BBE71BC8F51C006BBEB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1C4BBE51BC8F51C006BBEB7 /* GlowProject */,
+				B1C4BBF91BC8F51C006BBEB7 /* GlowProjectTests */,
+				B1C4BC041BC8F51C006BBEB7 /* GlowProjectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1C4BBE41BC8F51C006BBEB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C4BBF41BC8F51C006BBEB7 /* LaunchScreen.storyboard in Resources */,
+				B1C4BBF11BC8F51C006BBEB7 /* Assets.xcassets in Resources */,
+				B11C16C41BCC215200FBDE87 /* Glow_Data.txt in Resources */,
+				B11C16B51BCC202100FBDE87 /* Default-568h@2x.png in Resources */,
+				B1C4BBEF1BC8F51C006BBEB7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C4BBF81BC8F51C006BBEB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C4BC031BC8F51C006BBEB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1C4BBE21BC8F51C006BBEB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B133B2DA1BCA21CE004309D1 /* CommentTableViewController.swift in Sources */,
+				B1C4BBEC1BC8F51C006BBEB7 /* ViewController.swift in Sources */,
+				B11C16C21BCC214100FBDE87 /* README.md in Sources */,
+				B11C16BE1BCC211100FBDE87 /* Author.m in Sources */,
+				B11C16C01BCC211100FBDE87 /* Topic.m in Sources */,
+				B1C4BBEA1BC8F51C006BBEB7 /* AppDelegate.swift in Sources */,
+				B19DBCC71BC95B3600BD95B2 /* CommentTableViewCell.swift in Sources */,
+				B11C16B71BCC20E800FBDE87 /* TopicTableViewCell.swift in Sources */,
+				B19DBCB91BC90C8100BD95B2 /* TopicTableViewController.swift in Sources */,
+				B11C16BF1BCC211100FBDE87 /* MyComment.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C4BBF61BC8F51C006BBEB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C4BBFF1BC8F51C006BBEB7 /* GlowProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C4BC011BC8F51C006BBEB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C4BC0A1BC8F51C006BBEB7 /* GlowProjectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1C4BBFC1BC8F51C006BBEB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1C4BBE51BC8F51C006BBEB7 /* GlowProject */;
+			targetProxy = B1C4BBFB1BC8F51C006BBEB7 /* PBXContainerItemProxy */;
+		};
+		B1C4BC071BC8F51C006BBEB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1C4BBE51BC8F51C006BBEB7 /* GlowProject */;
+			targetProxy = B1C4BC061BC8F51C006BBEB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1C4BBED1BC8F51C006BBEB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1C4BBEE1BC8F51C006BBEB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1C4BBF21BC8F51C006BBEB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1C4BBF31BC8F51C006BBEB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1C4BC0C1BC8F51C006BBEB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1C4BC0D1BC8F51C006BBEB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1C4BC0F1BC8F51C006BBEB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = GlowProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.firststep.GlowProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GlowProject/GlowProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1C4BC101BC8F51C006BBEB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = GlowProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.firststep.GlowProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GlowProject/GlowProject-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		B1C4BC121BC8F51C006BBEB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GlowProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.firststep.GlowProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GlowProject.app/GlowProject";
+			};
+			name = Debug;
+		};
+		B1C4BC131BC8F51C006BBEB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GlowProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.firststep.GlowProjectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GlowProject.app/GlowProject";
+			};
+			name = Release;
+		};
+		B1C4BC151BC8F51C006BBEB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GlowProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.firststep.GlowProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GlowProject;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B1C4BC161BC8F51C006BBEB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GlowProjectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.firststep.GlowProjectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GlowProject;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1C4BBE11BC8F51C006BBEB7 /* Build configuration list for PBXProject "GlowProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C4BC0C1BC8F51C006BBEB7 /* Debug */,
+				B1C4BC0D1BC8F51C006BBEB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1C4BC0E1BC8F51C006BBEB7 /* Build configuration list for PBXNativeTarget "GlowProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C4BC0F1BC8F51C006BBEB7 /* Debug */,
+				B1C4BC101BC8F51C006BBEB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1C4BC111BC8F51C006BBEB7 /* Build configuration list for PBXNativeTarget "GlowProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C4BC121BC8F51C006BBEB7 /* Debug */,
+				B1C4BC131BC8F51C006BBEB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1C4BC141BC8F51C006BBEB7 /* Build configuration list for PBXNativeTarget "GlowProjectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C4BC151BC8F51C006BBEB7 /* Debug */,
+				B1C4BC161BC8F51C006BBEB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1C4BBDE1BC8F51C006BBEB7 /* Project object */;
+}
