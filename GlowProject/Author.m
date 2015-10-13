@@ -13,7 +13,7 @@
 -(id) initWithId:(int)_idNumber
       firstName:(NSString*)_firstName
       lastName:(NSString*)_lastName
-      profileImage:(UIImage*)_profileImage{
+      profileImage:(UIImageView*)_profileImage{
     
     if (self = [super init]){
         idNumber = _idNumber;
@@ -36,7 +36,7 @@
     return self->lastName;
 }
 
--(UIImage*) getProfileImage{
+-(UIImageView*) getProfileImage{
     return self->profileImage;
 }
 

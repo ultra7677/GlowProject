@@ -14,18 +14,18 @@
     
     NSString *firstName;
     NSString *lastName;
-    UIImage *profileImage;
+    UIImageView *profileImage;
     
 }
 - (id) initWithId:(int)_idNumber
        firstName:(NSString*)_firstName
        lastName:(NSString*)_lastName
-     profileImage:(UIImage*)_profileImage;
+     profileImage:(UIImageView*)_profileImage;
 
 - (int) getIdNumber;
 
 - (NSString*) getFirstName;
 - (NSString*) getLastName;
-- (UIImage*) getProfileImage;
+- (UIImageView*) getProfileImage;
 
 @end

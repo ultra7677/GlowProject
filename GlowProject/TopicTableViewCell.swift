@@ -19,10 +19,15 @@ class TopicTableViewCell: UITableViewCell {
     @IBOutlet weak var profileImage: UIImageView!
     
   
+  
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        profileImage.layer.borderWidth = 0.0001
+        profileImage.layer.masksToBounds = false
+        profileImage.layer.borderColor = UIColor.blackColor().CGColor
+        profileImage.layer.cornerRadius = profileImage.frame.height/2
+        profileImage.clipsToBounds = true
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

@@ -8,6 +8,21 @@
 
 import UIKit
 
+// Add a new method to create hex form color
+extension UIColor {
+    convenience init(red: Int, green: Int, blue: Int, alphar:CGFloat) {
+        assert(red >= 0 && red <= 255, "Invalid red component")
+        assert(green >= 0 && green <= 255, "Invalid green component")
+        assert(blue >= 0 && blue <= 255, "Invalid blue component")
+        
+        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: alphar)
+    }
+    
+    convenience init(netHex:Int,alpha:CGFloat) {
+        self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff,alphar:alpha)
+    }
+}
+
 class TopicTableViewController: UITableViewController {
     
     // MARK Properties
@@ -16,10 +31,14 @@ class TopicTableViewController: UITableViewController {
     var comments1 = NSMutableArray()
     
     func loadSampleTopics(){
-        let image = UIImage(named: "user1")
+        let image1 = UIImageView()
+        image1.image = UIImage(named: "user1")
         
-        let author1 = Author(id: 1, firstName: "BanZhao", lastName: "Huang", profileImage: image)
-        let author2 = Author(id: 2, firstName: "Ultra", lastName: "Huang", profileImage: image)
+        let image2 = UIImageView()
+        image2.image = UIImage(named: "user3")
+        
+        let author1 = Author(id: 1, firstName: "BanZhao", lastName: "Huang", profileImage: image1)
+        let author2 = Author(id: 2, firstName: "Ultra", lastName: "Huang", profileImage: image2)
         
         let comment1 = MyComment(id: 1, content: "Hello Ultra, I am BanZhao", author: author1)
         let comment2 = MyComment(id: 2, content: "Hello Ultra, I am Huang", author: author2)
@@ -30,11 +49,12 @@ class TopicTableViewController: UITableViewController {
     
         comments1.addObject(comment3)
         let topic1 = Topic(id: 1, title: "Tell me about yourself", content: "Nice to meet you!", tag: "Glow", author: author1, comments: comments)
-        let topic2 = Topic(id: 2, title: "Dota2 WTF Moments", content: "Enjoying youself!", tag: "Dota2", author: author2, comments: comments1)
-        topics += [topic1,topic2]
-        
+        let topic2 = Topic(id: 2, title: "Dota2 WTF Moments", content: "Enjoying youself! ssssssssdsdsdsaddddddddddddd", tag: "Dota2WTFF", author: author2, comments: comments1)
+        let topic3 = Topic(id: 1, title: "How are you", content: "wahahahahhahahaha!", tag: "Younger", author: author1, comments: comments)
+        topics += [topic1,topic2,topic3]
     
     }
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "showComments"){
@@ -84,13 +104,29 @@ class TopicTableViewController: UITableViewController {
         
         cell.tagLabel.text = topic.getTag() + " >"
         cell.titleLabel.text = topic.getTitle()
-      //  cell.titleButton.setValue(1, forKey: "rownumber")
+//  cell.titleButton.setValue(1, forKey: "rownumber")
         cell.contentLabel.text = topic.getContent()
         cell.authorNameLabel.text = topic.getAuthor().getFirstName()
         
-        // *Let the tagLabel's width fit with its text（still not finished）
-        cell.tagLabel.backgroundColor = UIColor(red: 58, green: 0, blue: 220, alpha:0.2)
+        //different tag at diffrent row should have different background color and text color
         
+        if(indexPath.row % 3 == 0){
+            cell.tagLabel.backgroundColor = UIColor(netHex: 0x915C57,alpha: 0.3)
+            cell.tagLabel.textColor = UIColor(netHex:0x915C57,alpha: 0.7)
+        }else if(indexPath.row % 3 == 1){
+            cell.tagLabel.backgroundColor = UIColor(netHex: 0x536156,alpha: 0.3)
+            cell.tagLabel.textColor = UIColor(netHex:0x536156,alpha: 0.7)
+            
+            cell.backgroundColor = UIColor(netHex:0xE8E8EB,alpha: 0.15)
+        }else{
+            cell.tagLabel.backgroundColor = UIColor(netHex: 0x9D9DB0,alpha: 0.5)
+            cell.tagLabel.textColor = UIColor(netHex:0x9D9DB0,alpha: 0.8)
+        }
+        
+        // set color
+        cell.authorNameLabel.textColor =  UIColor(netHex:0x9BA678,alpha: 1)
+        cell.titleLabel.textColor = UIColor(netHex:0x465449,alpha: 1)
+        cell.contentLabel.textColor = UIColor(netHex:0x9BA678,alpha: 1)
         
         // When the number of response is one
         if(topic.getComments().count == 1){
@@ -99,24 +135,8 @@ class TopicTableViewController: UITableViewController {
             cell.commentsNumberLabel.text = String(topic.getComments().count) + " responses"
         }
         
-        // When the text is too long
-      //  cell.tagLabel.lineBreakMode = NSLineBreakMode.ByTruncatingTail
-        cell.authorNameLabel.lineBreakMode = NSLineBreakMode.ByTruncatingTail
-        cell.contentLabel.lineBreakMode = NSLineBreakMode.ByTruncatingTail
-        
-        let profileImageView = UIImageView(image:topic.getAuthor().getProfileImage())
-        cell.profileImage = profileImageView
-        
-        //add at top
-        /*
-        if (indexPath.row == 0){
-            let label1 = UILabel(frame: CGRectMake(10, 100, 200, 200))
-            label1.text = "dd"
-            label1.sizeToFit()
-            label1.backgroundColor = UIColor(red: 10, green: 0, blue: 200, alpha: 0.5)
-            tableView.addSubview(label1)
-        }
-        */
+        let profileImageView = topic.getAuthor().getProfileImage()
+        cell.profileImage.image = profileImageView.image
         return cell
     }
 }
