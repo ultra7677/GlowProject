@@ -9,8 +9,10 @@
 import UIKit
 
 class CommentTableViewController: UITableViewController {
+
     // MARK Properties
     var topic: Topic!
+    @IBOutlet var tabelView: UITableView!
     
     func loadSampleComments(){
         print(topic.getTitle())
@@ -22,6 +24,9 @@ class CommentTableViewController: UITableViewController {
         
         // Load the sample data
         loadSampleComments()
+        
+       self.tableView.rowHeight = UITableViewAutomaticDimension
+       self.tableView.estimatedRowHeight = 144.0
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,79 +46,25 @@ class CommentTableViewController: UITableViewController {
         return topic.getComments().count+1
     }
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if(indexPath.row == 0)
-        {
-            return 200
-        }
-        else {
-            return 144
-            
-        }
-    }
-
+ 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cellIdentifier = "CommentTableViewCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! CommentTableViewCell
-        
+
+      //  tableView.rowHeight = UITableViewAutomaticDimension
         if (indexPath.row == 0){
-            
+            cell.commentLabel.text =
+            "fdfdsfjdsaklfafdfdsfjdsaklfadshjklfhadsjklfdskjlffdfdsfjdsaklfadshjklfhadsjklfdskjlffdfdsfjdsaklfadshjklfhadsjklfdskjlffdfdsfjdsaklfadshjklfhadsjklfdskjlffdfdsfjdsaklfadshjklfhadsjklfdskjlfdshjklfhadsjklfdskjlf"
         }else{
         
             let comment = topic.getComments().objectAtIndex(indexPath.row-1)
             print(comment.getContent())
 
-            cell.commentLabel.text = comment.getContent()
+            cell.commentLabel?.text = comment.getContent()
         }
         return cell
     }
     
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

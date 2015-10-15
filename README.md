@@ -37,4 +37,5 @@ UITabelViewControllerCell如何自定义单独一个cell的内容等等。
 但是如果这样做的话，prepareForSegue里面的参数sender会是一个UIButton，当时做这块的时候没有仔细思考这一块的内容。
 现在觉得如果通过UIButton里面记录cell的下标还是可以对应到具体的主题。但是由于当前还有更重要的坑要填准备先放一下。 
 
-
+#####2015.10.16
+实现了让commentViewControllerCell的每个cell高度与不同长度的回复保存一致，这周末有概率论期中考试，会暂停几天进度
