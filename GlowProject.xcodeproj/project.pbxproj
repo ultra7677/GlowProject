@@ -12,13 +12,12 @@
 		B11C16BE1BCC211100FBDE87 /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = B11C16B91BCC211100FBDE87 /* Author.m */; settings = {ASSET_TAGS = (); }; };
 		B11C16BF1BCC211100FBDE87 /* MyComment.m in Sources */ = {isa = PBXBuildFile; fileRef = B11C16BB1BCC211100FBDE87 /* MyComment.m */; settings = {ASSET_TAGS = (); }; };
 		B11C16C01BCC211100FBDE87 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = B11C16BD1BCC211100FBDE87 /* Topic.m */; settings = {ASSET_TAGS = (); }; };
-		B11C16C41BCC215200FBDE87 /* Glow_Data.txt in Resources */ = {isa = PBXBuildFile; fileRef = B11C16C31BCC215200FBDE87 /* Glow_Data.txt */; settings = {ASSET_TAGS = (); }; };
+		B11C16C41BCC215200FBDE87 /* Glow_Data.json in Resources */ = {isa = PBXBuildFile; fileRef = B11C16C31BCC215200FBDE87 /* Glow_Data.json */; settings = {ASSET_TAGS = (); }; };
 		B11C16C61BCC23A500FBDE87 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B11C16C51BCC23A500FBDE87 /* README.md */; settings = {ASSET_TAGS = (); }; };
 		B133B2DA1BCA21CE004309D1 /* CommentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B133B2D91BCA21CE004309D1 /* CommentTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B19DBCB91BC90C8100BD95B2 /* TopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19DBCB81BC90C8100BD95B2 /* TopicTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B19DBCC71BC95B3600BD95B2 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19DBCC61BC95B3600BD95B2 /* CommentTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		B1C4BBEA1BC8F51C006BBEB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C4BBE91BC8F51C006BBEB7 /* AppDelegate.swift */; };
-		B1C4BBEC1BC8F51C006BBEB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C4BBEB1BC8F51C006BBEB7 /* ViewController.swift */; };
 		B1C4BBEF1BC8F51C006BBEB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C4BBED1BC8F51C006BBEB7 /* Main.storyboard */; };
 		B1C4BBF11BC8F51C006BBEB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C4BBF01BC8F51C006BBEB7 /* Assets.xcassets */; };
 		B1C4BBF41BC8F51C006BBEB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C4BBF21BC8F51C006BBEB7 /* LaunchScreen.storyboard */; };
@@ -52,7 +51,7 @@
 		B11C16BB1BCC211100FBDE87 /* MyComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyComment.m; sourceTree = "<group>"; };
 		B11C16BC1BCC211100FBDE87 /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
 		B11C16BD1BCC211100FBDE87 /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
-		B11C16C31BCC215200FBDE87 /* Glow_Data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Glow_Data.txt; sourceTree = "<group>"; };
+		B11C16C31BCC215200FBDE87 /* Glow_Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Glow_Data.json; sourceTree = "<group>"; };
 		B11C16C51BCC23A500FBDE87 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B133B2D91BCA21CE004309D1 /* CommentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewController.swift; sourceTree = "<group>"; };
 		B19DBCB81BC90C8100BD95B2 /* TopicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicTableViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +59,6 @@
 		B19DBCC61BC95B3600BD95B2 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		B1C4BBE61BC8F51C006BBEB7 /* GlowProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlowProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1C4BBE91BC8F51C006BBEB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B1C4BBEB1BC8F51C006BBEB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B1C4BBEE1BC8F51C006BBEB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1C4BBF01BC8F51C006BBEB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1C4BBF31BC8F51C006BBEB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -125,17 +123,16 @@
 			children = (
 				B19DBCC61BC95B3600BD95B2 /* CommentTableViewCell.swift */,
 				B1C4BBE91BC8F51C006BBEB7 /* AppDelegate.swift */,
-				B1C4BBEB1BC8F51C006BBEB7 /* ViewController.swift */,
 				B11C16B61BCC20E800FBDE87 /* TopicTableViewCell.swift */,
 				B1C4BBED1BC8F51C006BBEB7 /* Main.storyboard */,
 				B19DBCB81BC90C8100BD95B2 /* TopicTableViewController.swift */,
+				B11C16C31BCC215200FBDE87 /* Glow_Data.json */,
 				B133B2D91BCA21CE004309D1 /* CommentTableViewController.swift */,
 				B1C4BBF01BC8F51C006BBEB7 /* Assets.xcassets */,
 				B1C4BBF21BC8F51C006BBEB7 /* LaunchScreen.storyboard */,
 				B11C16B81BCC211100FBDE87 /* Author.h */,
 				B11C16B91BCC211100FBDE87 /* Author.m */,
 				B11C16BA1BCC211100FBDE87 /* MyComment.h */,
-				B11C16C31BCC215200FBDE87 /* Glow_Data.txt */,
 				B11C16BB1BCC211100FBDE87 /* MyComment.m */,
 				B11C16BC1BCC211100FBDE87 /* Topic.h */,
 				B11C16BD1BCC211100FBDE87 /* Topic.m */,
@@ -272,7 +269,7 @@
 			files = (
 				B1C4BBF41BC8F51C006BBEB7 /* LaunchScreen.storyboard in Resources */,
 				B1C4BBF11BC8F51C006BBEB7 /* Assets.xcassets in Resources */,
-				B11C16C41BCC215200FBDE87 /* Glow_Data.txt in Resources */,
+				B11C16C41BCC215200FBDE87 /* Glow_Data.json in Resources */,
 				B11C16B51BCC202100FBDE87 /* Default-568h@2x.png in Resources */,
 				B1C4BBEF1BC8F51C006BBEB7 /* Main.storyboard in Resources */,
 			);
@@ -300,7 +297,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B133B2DA1BCA21CE004309D1 /* CommentTableViewController.swift in Sources */,
-				B1C4BBEC1BC8F51C006BBEB7 /* ViewController.swift in Sources */,
 				B11C16C61BCC23A500FBDE87 /* README.md in Sources */,
 				B11C16BE1BCC211100FBDE87 /* Author.m in Sources */,
 				B11C16C01BCC211100FBDE87 /* Topic.m in Sources */,

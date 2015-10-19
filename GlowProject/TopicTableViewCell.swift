@@ -23,6 +23,8 @@ class TopicTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        // This code is for changing the profile image to a circle form
         profileImage.layer.borderWidth = 0.0001
         profileImage.layer.masksToBounds = false
         profileImage.layer.borderColor = UIColor.blackColor().CGColor

@@ -54,5 +54,10 @@
 -(int)getCommentsNumber{
     return self->commentsNumber;
 }
+
+-(void)setCommentsNumber:(int) _number{
+    commentsNumber = _number;
+}
+
     
 @end

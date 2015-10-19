@@ -26,7 +26,7 @@ class CommentTableViewController: UITableViewController {
         loadSampleComments()
         
        self.tableView.rowHeight = UITableViewAutomaticDimension
-       self.tableView.estimatedRowHeight = 144.0
+       self.tableView.estimatedRowHeight = 180
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,17 +52,55 @@ class CommentTableViewController: UITableViewController {
         
         let cellIdentifier = "CommentTableViewCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! CommentTableViewCell
-
-      //  tableView.rowHeight = UITableViewAutomaticDimension
-        if (indexPath.row == 0){
-            cell.commentLabel.text =
-            "fdfdsfjdsaklfafdfdsfjdsaklfadshjklfhadsjklfdskjlffdfdsfjdsaklfadshjklfhadsjklfdskjlffdfdsfjdsaklfadshjklfhadsjklfdskjlffdfdsfjdsaklfadshjklfhadsjklfdskjlffdfdsfjdsaklfadshjklfhadsjklfdskjlfdshjklfhadsjklfdskjlf"
-        }else{
         
+        // row 0 means this is the topic detail cell
+        if (indexPath.row == 0){
+            cell.titleLabel.text = topic.getTitle()
+            cell.authorLabel.hidden = true
+            cell.createTimeLabel.hidden = true
+            cell.profileImage.image = topic.getAuthor().getProfileImage().image
+            cell.commentLabel.text = topic.getContent()
+            
+            // deal with different amout of comments for this topic
+            
+            /* NOTICE: 
+               I haven't implement the method of views and created time of one topic,
+               Since I thought its better to implement those attributes when I can run this app on a server
+            */
+            if(topic.getComments().count == 1) {
+                cell.commentNumberLabel.text = String(topic.getComments().count) + " Comment · 350 Views"
+            }else{
+                cell.commentNumberLabel.text = String(topic.getComments().count) + " Comments · 350 Views"
+            }
+            
+            cell.postByLabel.text = " Posted by" + topic.getAuthor().getFirstName() + " · 13 hours ago"
+            cell.reportLabel.text = "Report this post"
+            
+            // set hidden label
+            cell.authorLabel.hidden = true
+            cell.createTimeLabel.hidden = true
+          
+        
+        }else{
+            // this area is for comments of this topic
             let comment = topic.getComments().objectAtIndex(indexPath.row-1)
-            print(comment.getContent())
-
-            cell.commentLabel?.text = comment.getContent()
+            cell.commentLabel.text = comment.getContent()
+            cell.authorLabel.text = comment.getAuthor().getFirstName()
+            cell.createTimeLabel.text = " · 4 hours ago"
+            cell.profileImage.image = comment.getAuthor().getProfileImage().image
+            cell.reportLabel.text = "Report this reply"
+            
+            cell.commentNumberLabel.removeFromSuperview()
+            cell.postByLabel.removeFromSuperview()
+            
+            //This code is very important, It adds constraints programmatically to keep the autolayout
+            let verticalSpace = NSLayoutConstraint(item: cell.reportLabel, attribute: .Bottom, relatedBy: .Equal, toItem: cell.commentLabel, attribute: .Bottom, multiplier: 1, constant: 28)
+            NSLayoutConstraint.activateConstraints([verticalSpace])
+            
+            // set background color for some cell
+            if (indexPath.row % 2 == 1){
+                 cell.backgroundColor = UIColor(netHex:0xE8E8EB,alpha: 0.3)
+            }
         }
         return cell
     }

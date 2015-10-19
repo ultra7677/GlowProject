@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 // Add a new method to create hex form color
 extension UIColor {
@@ -30,36 +31,62 @@ class TopicTableViewController: UITableViewController {
     var comments = NSMutableArray()
     var comments1 = NSMutableArray()
     
+    // load json form data from Glow_Data.json
     func loadSampleTopics(){
-        let image1 = UIImageView()
-        image1.image = UIImage(named: "user1")
         
-        let image2 = UIImageView()
-        image2.image = UIImage(named: "user3")
-        
-        let author1 = Author(id: 1, firstName: "BanZhao", lastName: "Huang", profileImage: image1)
-        let author2 = Author(id: 2, firstName: "Ultra", lastName: "Huang", profileImage: image2)
-        
-        let comment1 = MyComment(id: 1, content: "Hello Ultra, I am BanZhao", author: author1)
-        let comment2 = MyComment(id: 2, content: "Hello Ultra, I am Huang", author: author2)
-        let comment3 = MyComment(id: 3, content: "HeiHei", author: author2)
-        
-        comments.addObject(comment1)
-        comments.addObject(comment2)
-    
-        comments1.addObject(comment3)
-        let topic1 = Topic(id: 1, title: "Tell me about yourself", content: "Nice to meet you!", tag: "Glow", author: author1, comments: comments)
-        let topic2 = Topic(id: 2, title: "Dota2 WTF Moments", content: "Enjoying youself! ssssssssdsdsdsaddddddddddddd", tag: "Dota2WTFF", author: author2, comments: comments1)
-        let topic3 = Topic(id: 1, title: "How are you", content: "wahahahahhahahaha!", tag: "Younger", author: author1, comments: comments)
-        topics += [topic1,topic2,topic3]
-    
+        guard let path = NSBundle.mainBundle().pathForResource("Glow_Data", ofType: "json") else{
+            print("error finding file")
+            return
+        }
+        do{ // File has been find
+            let data: NSData? = NSData(contentsOfFile: path)
+            if let jsonResult: NSDictionary =
+                try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary{
+                // get topics
+                let topicArray = jsonResult["topics"] as! NSMutableArray
+                    
+                    for topic in topicArray{
+                        // the author of ont topic
+                        let author = topic["author"] as! NSDictionary
+                        // the photo of author, saved in Assets.xcassets
+                        let image1 = UIImageView()
+                        image1.image = UIImage(named: author["profile_image"]! as! String)
+                        // author1 is the author of this topic
+                        let author1 = Author(id: 10001, firstName: author["first_name"]! as! String, lastName: author["last_name"]! as! String, profileImage: image1)
+                        
+                        // get comments for this topic
+                        let commentArray = topic["comments"] as! NSMutableArray
+                        // comments is the set including every comment of this topic
+                        let comments = NSMutableArray()
+                        
+                        for comment in commentArray{
+                            //get author of one comment
+                            let author = comment["author"] as! NSDictionary
+                            let image0 = UIImageView()
+                            image0.image = UIImage(named: author["profile_image"]! as! String)
+                            let author0 = Author(id: 10001, firstName: author["first_name"]! as! String, lastName: author["last_name"]! as! String, profileImage: image0)
+                            let comment0 = MyComment(id: 10001 ,content: comment["content"]! as! String, author: author0)
+                            //add one comment to the set
+                            comments.addObject(comment0)
+                        }
+                        // topic0 is a topic
+                        let topic0 = Topic(id: 10001, title: topic["title"]!! as! String, content: topic["content"]!! as! String, tag: topic["tag"]!! as! String, author: author1, comments: comments)
+                        // add topic0 to the topics set
+                        topics += [topic0]
+                        
+                    }
+            }
+        } catch let error as NSError{
+            print("Error:\n \(error)")
+            return
+        }
     }
     
-    
+    // Transfer data between two ViewControllers
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "showComments"){
             let commentTableViewController = segue.destinationViewController as! CommentTableViewController
-            
+            // get which topic user selected and then show detail of this topic
             if let selectedTopicCell = sender as?TopicTableViewCell{
                 let indexPath = tableView.indexPathForCell(selectedTopicCell)!
                 let selectedTopic = topics[indexPath.row]
@@ -104,9 +131,12 @@ class TopicTableViewController: UITableViewController {
         
         cell.tagLabel.text = topic.getTag() + " >"
         cell.titleLabel.text = topic.getTitle()
-//  cell.titleButton.setValue(1, forKey: "rownumber")
         cell.contentLabel.text = topic.getContent()
-        cell.authorNameLabel.text = topic.getAuthor().getFirstName()
+        
+        //get the latest commender of this topic
+        let latestComment = topic.getComments().objectAtIndex(topic.getComments().count-1) as! MyComment
+       
+        cell.authorNameLabel.text =  latestComment.getAuthor().getFirstName()
         
         //different tag at diffrent row should have different background color and text color
         
@@ -133,9 +163,10 @@ class TopicTableViewController: UITableViewController {
             cell.commentsNumberLabel.text = "1 response"
         }else{
             cell.commentsNumberLabel.text = String(topic.getComments().count) + " responses"
+            
         }
-        
-        let profileImageView = topic.getAuthor().getProfileImage()
+        // set profile image
+        let profileImageView = latestComment.getAuthor().getProfileImage()
         cell.profileImage.image = profileImageView.image
         return cell
     }

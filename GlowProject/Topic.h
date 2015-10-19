@@ -43,4 +43,6 @@
 - (int) getIdNumber;
 - (int) getCommentsNumber;
 
+-(void)setCommentsNumber:(int)_number;
+
 @end
