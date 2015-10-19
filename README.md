@@ -6,7 +6,7 @@ Learning IOS Development
 * 完成主题详情页面
 
 ######主体列表页面
-
+![Aaron Swartz](https://github.com/ultra7677/GlowProject/raw/master/TopicPage.jpg?raw=true)
 ***
 #####2015.10.12
 经过将近一周假期的探索与学习，勉强完成了project的框架，但是依然有很多细节方面的东西需要进一步学习。
@@ -48,7 +48,7 @@ UITabelViewControllerCell如何自定义单独一个cell的内容等等。
 #####2015.10.16
 实现了让commentViewControllerCell的每个cell高度与不同长度的回复保存一致，这周末有概率论期中考试，会暂停几天进度  
 
-***
+
 #####2015.10.18  
 完成了主题页面的设计与显示，布局采用autolayout与通过代码添加constraints的方式实现了根据UILabel内文本的长度调节每个cell的高度。
 由于第一个cell是显示主题的详情，其余的cell是显示对当前主题的评论，所以遇到了问题就是如何让对应的cell里面显示我想要的内容。
